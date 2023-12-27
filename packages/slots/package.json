@@ -1,5 +1,5 @@
 {
-  "name": "@incomplete/ui",
+  "name": "@incomplete/ui.slots",
   "version": "0.1.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -15,10 +15,7 @@
     "lint": "eslint . --max-warnings 0",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
-  "dependencies": {
-    "@incomplete/ui.classnames": "*",
-    "@incomplete/ui.slots": "*",
-    "@incomplete/ui.utils": "*",
+  "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

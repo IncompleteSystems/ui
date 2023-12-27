@@ -1,6 +1,6 @@
 {
-  "name": "@repo/docs",
-  "version": "0.0.0",
+  "name": "@incomplete/docs.ui",
+  "version": "0.1.0",
   "type": "module",
   "private": true,
   "scripts": {
@@ -11,23 +11,25 @@
     "lint": "eslint ./stories/*.stories.tsx --max-warnings 0"
   },
   "dependencies": {
-    "@acme/ui": "*",
+    "@incomplete/ui": "*",
+    "@incomplete/ui.slots": "*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
     "@storybook/addon-actions": "^7.5.3",
     "@storybook/addon-docs": "^7.5.3",
     "@storybook/addon-essentials": "^7.5.3",
     "@storybook/addon-links": "^7.5.3",
+    "@storybook/addon-themes": "^7.6.6",
     "@storybook/react": "^7.5.3",
     "@storybook/react-vite": "^7.5.3",
     "@vitejs/plugin-react": "^4.2.0",
     "eslint": "^8.54.0",
     "serve": "^14.2.1",
     "storybook": "^7.5.3",
-    "@repo/typescript-config": "*",
     "typescript": "^5.3.2",
     "vite": "^5.0.2"
   }
