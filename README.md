@@ -1,192 +1,115 @@
-# Turborepo Design System Starter
+## @incomplete/ui
 
-This guide explains how to use a React design system starter powered by:
+A set of features for building UI libraries.
 
-- 🏎 [Turborepo](https://turbo.build/repo) — High-performance build system for Monorepos
-- 🚀 [React](https://reactjs.org/) — JavaScript library for user interfaces
-- 🛠 [Tsup](https://github.com/egoist/tsup) — TypeScript bundler powered by esbuild
-- 📖 [Storybook](https://storybook.js.org/) — UI component environment powered by Vite
+We provide a collection of default plugins and component behaviors that can be used to create UI libraries with ease.
 
-As well as a few others tools preconfigured:
+This project is inspired by the [Tailwind CSS](https://tailwindcss.com/) library, and includes [tailwind-variants](https://www.tailwind-variants.org/).
+Our library source code is inspired by [Framer Motion](https://www.framer.com/motion/).
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-- [Changesets](https://github.com/changesets/changesets) for managing versioning and changelogs
-- [GitHub Actions](https://github.com/changesets/action) for fully automated package publishing
-
-## Using this example
-
-Run the following command:
+## Getting Started
 
 ```sh
-npx create-turbo@latest -e design-system
+yarn add @incomplete/ui
 ```
 
-### Useful Commands
+```tsx
+// Import the `ui` library
+import ui from '@incomplete/ui';
 
-- `pnpm build` - Build all packages, including the Storybook site
-- `pnpm dev` - Run all packages locally and preview with Storybook
-- `pnpm lint` - Lint all packages
-- `pnpm changeset` - Generate a changeset
-- `pnpm clean` - Clean up all `node_modules` and `dist` folders (runs each package's clean script)
+// Create styles for a button component
+const ButtonStyles = ui.variants({
+  base: 'text-md px-6 py-3',
+  variants: {
+    size: {
+      sm: 'text-sm px-4 py-2',
+      md: 'text-md px-6 py-3',
+      lg: 'text-lg px-8 py-4',
+    },
+    color: {
+      primary: 'bg-blue-500 text-white',
+      secondary: 'bg-gray-500 text-white',
+    },
+  },
+});
 
-## Turborepo
-
-[Turborepo](https://turbo.build/repo) is a high-performance build system for JavaScript and TypeScript codebases. It was designed after the workflows used by massive software engineering organizations to ship code at scale. Turborepo abstracts the complex configuration needed for monorepos and provides fast, incremental builds with zero-configuration remote caching.
-
-Using Turborepo simplifies managing your design system monorepo, as you can have a single lint, build, test, and release process for all packages. [Learn more](https://vercel.com/blog/monorepos-are-changing-how-teams-build-software) about how monorepos improve your development workflow.
-
-## Apps & Packages
-
-This Turborepo includes the following packages and applications:
-
-- `apps/docs`: Component documentation site with Storybook
-- `packages/ui`: Core React components
-- `packages/utils`: Shared React utilities
-- `packages/typescript-config`: Shared `tsconfig.json`s used throughout the Turborepo
-- `packages/eslint-config`: ESLint preset
-
-Each package and app is 100% [TypeScript](https://www.typescriptlang.org/). Workspaces enables us to "hoist" dependencies that are shared between packages to the root `package.json`. This means smaller `node_modules` folders and a better local dev experience. To install a dependency for the entire monorepo, use the `-w` workspaces flag with `pnpm add`.
-
-This example sets up your `.gitignore` to exclude all generated files, other folders like `node_modules` used to store your dependencies.
-
-### Compilation
-
-To make the core library code work across all browsers, we need to compile the raw TypeScript and React code to plain JavaScript. We can accomplish this with `tsup`, which uses `esbuild` to greatly improve performance.
-
-Running `pnpm build` from the root of the Turborepo will run the `build` command defined in each package's `package.json` file. Turborepo runs each `build` in parallel and caches & hashes the output to speed up future builds.
-
-For `acme-core`, the `build` command is the following:
-
-```bash
-tsup src/index.tsx --format esm,cjs --dts --external react
+// Create a button component using the styles
+const Button = ui.button(ButtonStyles);
 ```
 
-`tsup` compiles `src/index.tsx`, which exports all of the components in the design system, into both ES Modules and CommonJS formats as well as their TypeScript types. The `package.json` for `acme-core` then instructs the consumer to select the correct format:
+## The `ui` Library
 
-```json:acme-core/package.json
-{
-  "name": "@acme/core",
-  "version": "0.0.0",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "sideEffects": false,
-}
-```
+The `ui` library is a default instance of the `createLibrary` function. It includes a set of default plugins and features that can be used to create UI libraries.
 
-Run `pnpm build` to confirm compilation is working correctly. You should see a folder `acme-core/dist` which contains the compiled output.
+### `createLibrary`
 
-```bash
-acme-core
-└── dist
-    ├── index.d.ts  <-- Types
-    ├── index.js    <-- CommonJS version
-    └── index.mjs   <-- ES Modules version
-```
+A factory function that creates a UI library. It takes a configuration object as an optional parameter and returns a library object. The library object is a Proxy that allows accessing plugins and creating components based on the plugins.
 
-## Components
+### `createConfig`
 
-Each file inside of `acme-core/src` is a component inside our design system. For example:
+Creates a configuration object for a UI library. It includes default plugins and features, and allows customization through an input `config` object. The function returns the configuration object with the merged plugins and features.
 
-```tsx:acme-core/src/Button.tsx
-import * as React from 'react';
+### `createPlugins`
 
-export interface ButtonProps {
-  children: React.ReactNode;
-}
+Creates and returns a map of cached plugins based on the provided configuration. The function takes in a configuration object and iterates over the plugins defined in the configuration to initialize and store them in the cache. The plugin cache is then returned as the result.
 
-export function Button(props: ButtonProps) {
-  return <button>{props.children}</button>;
-}
+### `createTemplate`
 
-Button.displayName = 'Button';
-```
+Creates a template component. It takes a component name or type and a configuration object as input, and returns a new component with custom props. The function utilizes the `createComponent` function to generate the template component.
 
-When adding a new file, ensure the component is also exported from the entry `index.tsx` file:
+### `createComponent`
 
-```tsx:acme-core/src/index.tsx
-import * as React from "react";
-export { Button, type ButtonProps } from "./Button";
-// Add new component exports here
-```
+Creates a React component based on a provided component name or element type and a configuration object. It applies a set of features to the component based on the configuration, and returns the resulting component. The function uses React's `createElement` and `forwardRef` functions to render the component.
 
-## Storybook
 
-Storybook provides us with an interactive UI playground for our components. This allows us to preview our components in the browser and instantly see changes when developing locally. This example preconfigures Storybook to:
+## Library Plugins
 
-- Use Vite to bundle stories instantly (in milliseconds)
-- Automatically find any stories inside the `stories/` folder
-- Support using module path aliases like `@acme-core` for imports
-- Write MDX for component documentation pages
+The `ui` library is built around a set of plugins that provide key features for the UI components. Plugins are used to create templates for components, apply class names, and handle variants.
 
-For example, here's the included Story for our `Button` component:
+They are available as methods on the `ui` library instance. They can be accessed using dot notation, e.g. `ui.variants()`.
 
-```js:apps/docs/stories/button.stories.mdx
-import { Button } from '@acme-core/src';
-import { Meta, Story, Preview, Props } from '@storybook/addon-docs/blocks';
+### `createComponentPlugin`
 
-<Meta title="Components/Button" component={Button} />
+The plugin function takes a component name and a configuration object as input, and returns a new component with updated props.
 
-# Button
+This plugin can be accessed by using the `ui(SomeComponent)` method.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisl eget consectetur tempor, nisl nunc egestas nisi, euismod aliquam nisl nunc euismod.
+### `createTemplatePlugin`
 
-## Props
+The plugin function returns a component template based on the provided configuration.
 
-<Props of={Box} />
+This plugin can be accessed by using the `ui.<HTMLElement>()` method. Where `<HTMLElement>` is the name of the HTML element.
 
-## Examples
+### `componentVariantsPlugin`
 
-<Preview>
-  <Story name="Default">
-    <Button>Hello</Button>
-  </Story>
-</Preview>
-```
+The plugin function returns the styles for component variants based on the provided configuration. It uses the [tailwind-variants](https://www.tailwind-variants.org/) package to generate the variants.
 
-This example includes a few helpful Storybook scripts:
+This plugin can be accessed using the `ui.variants()` method.
 
-- `pnpm dev`: Starts Storybook in dev mode with hot reloading at `localhost:6006`
-- `pnpm build`: Builds the Storybook UI and generates the static HTML files
-- `pnpm preview-storybook`: Starts a local server to view the generated Storybook UI
+##  Component Behaviors
 
-## Versioning & Publishing Packages
+The `ui` library provides a set of default behaviors for UI components. These behaviors are implemented as React Hooks and can be used to apply reusable functionality to components.
 
-This example uses [Changesets](https://github.com/changesets/changesets) to manage versions, create changelogs, and publish to npm. It's preconfigured so you can start publishing packages immediately.
+The hooks take props being passed to the component and a component ref and return a set of props which are applied to the component.
 
-You'll need to create an `NPM_TOKEN` and `GITHUB_TOKEN` and add it to your GitHub repository settings to enable access to npm. It's also worth installing the [Changesets bot](https://github.com/apps/changeset-bot) on your repository.
+### `elementTagFeature`
 
-### Generating the Changelog
+The hook determines the component to render based on the `as` prop, or defaults to `defaultComponent` or a `Slot` component if `asChild` is true.
 
-To generate your changelog, run `pnpm changeset` locally:
+### `classNameFeature`
 
-1. **Which packages would you like to include?** – This shows which packages and changed and which have remained the same. By default, no packages are included. Press `space` to select the packages you want to include in the `changeset`.
-1. **Which packages should have a major bump?** – Press `space` to select the packages you want to bump versions for.
-1. If doing the first major version, confirm you want to release.
-1. Write a summary for the changes.
-1. Confirm the changeset looks as expected.
-1. A new Markdown file will be created in the `changeset` folder with the summary and a list of the packages included.
+The hook takes a component and a configuration object as input and returns a new component with an updated `className` prop. It utilizes dependencies from the `@incomplete/ui.classnames` and `@incomplete/ui.utils` packages.
 
-### Releasing
+### `propertiesFeature`
 
-When you push your code to GitHub, the [GitHub Action](https://github.com/changesets/action) will run the `release` script defined in the root `package.json`:
+The hook takes in the component and the configuration, and returns a function that processes the properties. If the configuration specifies property processors, it applies them to the properties before returning the processed object.
 
-```bash
-turbo run build --filter=docs^... && changeset publish
-```
+##  Contributing
 
-Turborepo runs the `build` script for all publishable packages (excluding docs) and publishes the packages to npm. By default, this example includes `acme` as the npm organization. To change this, do the following:
+Contributions are welcome! Here are several ways you can contribute:
 
-- Rename folders in `packages/*` to replace `acme` with your desired scope
-- Search and replace `acme` with your desired scope
-- Re-run `pnpm install`
+- **[Submit Pull Requests](https://github.com/IncompleteSystems/ui/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
+- **[Join the Discussions](https://github.com/IncompleteSystems/ui/discussions)**: Share your insights, provide feedback, or ask questions.
+- **[Report Issues](https://github.com/IncompleteSystems/ui/issues)**: Submit bugs found or log feature requests for ui.
 
-To publish packages to a private npm organization scope, **remove** the following from each of the `package.json`'s
-
-```diff
-- "publishConfig": {
--  "access": "public"
-- },
 ```
