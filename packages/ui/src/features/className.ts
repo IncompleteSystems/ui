@@ -3,7 +3,7 @@ import { isFunction } from '@incomplete/ui.utils';
 
 import type { UIComponentFeature } from '../types';
 
-export const featureClassName: UIComponentFeature<{ className?: any }, { params?: any[] }> = (_component, config) => {
+export const classNameFeature: UIComponentFeature<{ className?: any }, { params?: any[] }> = (_component, config) => {
   const [stringsOrFn, ...values] = config?.params ?? [];
 
   const isFn = isFunction(stringsOrFn);

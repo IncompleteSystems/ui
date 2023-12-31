@@ -1,5 +1,4 @@
-import { TV } from 'tailwind-variants';
-import { featureClassName, featureElementTag, featureProperties } from './features';
+import { classNameFeature, elementTagFeature, propertiesFeature } from './features';
 import { createComponentPlugin, componentTemplatePlugin, componentVariantsPlugin } from './plugins';
 import { UILibraryConfig } from './types';
 
@@ -20,9 +19,9 @@ export const createConfig = <
   };
 
   const features = [
-    featureElementTag,
-    featureClassName,
-    featureProperties,
+    elementTagFeature,
+    classNameFeature,
+    propertiesFeature,
     ...(config?.features ?? []),
   ];
 

@@ -2,7 +2,7 @@ import { Slot } from '@incomplete/ui.slots';
 
 import type { UIComponentFeature } from '../types';
 
-export const featureElementTag: UIComponentFeature<{
+export const elementTagFeature: UIComponentFeature<{
   component?: string | React.ComponentType,
   as?: React.ComponentType,
   asChild?: boolean

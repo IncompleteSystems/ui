@@ -4,7 +4,7 @@ export type PropertyProcessor = (value: any, props?: any, ref?: React.ForwardedR
 
 export type PropertyProcessors = { [key: string]: PropertyProcessor };
 
-export const featureProperties: UIComponentFeature<{}, { props?: PropertyProcessors }> = (_component, config) => {
+export const propertiesFeature: UIComponentFeature<{}, { props?: PropertyProcessors }> = (_component, config) => {
   return (props, ref) => {
     if (!config.props) return props;
 
