@@ -1,8 +1,6 @@
 ## @incomplete/ui
 
-A set of features for building UI libraries.
-
-We provide a collection of default plugins and component behaviors that can be used to create UI libraries with ease.
+A collection of plugins and component behaviors that can be used to create UI libraries with ease.
 
 This project is inspired by the [Tailwind CSS](https://tailwindcss.com/) library, and includes [tailwind-variants](https://www.tailwind-variants.org/).
 Our library source code is inspired by [Framer Motion](https://www.framer.com/motion/).
