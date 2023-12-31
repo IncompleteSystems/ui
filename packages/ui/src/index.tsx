@@ -1,10 +1,10 @@
-import { createProxy as defaultUI } from './createProxy';
+import { createLibrary } from './createLibrary';
 
-const ui = defaultUI();
+const ui = createLibrary();
 
-export * from './createComponent';
+export * from './createTemplate';
 export * from './createConfig';
-export * from './createProxy';
+export * from './createLibrary';
 export * from './types';
 
 export default ui;

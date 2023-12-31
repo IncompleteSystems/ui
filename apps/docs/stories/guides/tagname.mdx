@@ -1,0 +1,36 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Guides/The as | asChild Prop" />
+
+# The `as` Prop
+
+The `as` prop allows you to render a component as a different component. This is useful for creating custom components that render a different HTML element than the one they are based on.
+
+```jsx
+import ui from '@incomplete/ui';
+
+const Button = ui.button`text-white bg-blue-500 rounded`;
+
+const App = () => (
+  <Button as="a" href="https://example.com">
+    Example
+  </Button>
+);
+```
+
+# The `asChild` Prop
+
+The `asChild` prop allows you to render a component as it's child. This is useful for creating custom higher-order components that render a different HTML element than the one they are based on.
+
+```jsx
+import ui from '@incomplete/ui';
+
+const Button = ui.button`text-white bg-blue-500 rounded`;
+
+const App = () => (
+  <Button asChild>
+    <a href="https://example.com">Example</a>
+  </Button>
+);
+```
+

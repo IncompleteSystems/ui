@@ -27,9 +27,13 @@
     "@storybook/react": "^7.5.3",
     "@storybook/react-vite": "^7.5.3",
     "@vitejs/plugin-react": "^4.2.0",
+    "autoprefixer": "^10.4.16",
     "eslint": "^8.54.0",
+    "remark-gfm": "^3.0.1",
+    "postcss": "^8.4.32",
     "serve": "^14.2.1",
     "storybook": "^7.5.3",
+    "tailwindcss": "^3.4.0",
     "typescript": "^5.3.2",
     "vite": "^5.0.2"
   }

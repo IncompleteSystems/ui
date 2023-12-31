@@ -1,0 +1,30 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Guides/The component template" />
+
+# The component template
+
+## `className` based on Template Literals (Template Strings)
+
+The `ui` object is a function that returns a component. It accepts a template literal as it's first argument. 
+
+The template literal is parsed and converted into a CSS class string. The CSS class string is then passed to the component as a `className` prop.
+
+```jsx
+import ui from '@incomplete/ui';
+
+// A button component created from a template literal
+const Button = ui.button`text-white bg-blue-500 rounded`;
+```
+
+## `className` based on a Component Props
+
+The `ui` object also accepts a function as it's first argument. The function is passed the component's properties and returns a value for `className` prop.
+
+```jsx
+import ui from '@incomplete/ui';
+
+// A button component created from a className function
+const Button = ui.button(({ rounded }) => `text-white bg-blue-500 ${rounded ? 'rounded' : ''}`);
+```
+

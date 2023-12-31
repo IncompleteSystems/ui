@@ -1,0 +1,28 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title="Introduction" />
+
+
+# @incomplete/ui
+**The UI library for building UI libraries.**
+
+Let's build a button component...
+
+```tsx
+// Import our UI library
+import ui from '@incomplete/ui';
+
+// Create styles for a button using tailwind + variants
+const ButtonStyles = ui.variants({
+  base: `rounded-md bg-indigo-600 px-3 py-2 text-white text-sm font-semibold shadow-sm`,
+  variants: {
+    primary: `bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500`,
+    secondary: `bg-gray-600 hover:bg-gray-700 focus:ring-gray-500`,
+  },
+})
+
+// Create a button component using the styles
+const Button = ui.button(ButtonStyles);
+```
+
+

@@ -1,36 +1,59 @@
-import { ComponentType, ElementType, ForwardedRef, PropsWithChildren } from 'react';
+import type { ComponentType, ElementType, ForwardedRef, HTMLAttributes, PropsWithChildren } from 'react';
+import type { TV } from 'tailwind-variants';
+
+export type UIComponentVariants = TV;
 
 export type UIComponent<
+  TComponent extends ElementType,
+  TCustomProps,
+> = ComponentType<Omit<React.HTMLAttributes<TComponent>, keyof TCustomProps> & TCustomProps>;
+
+export type UIComponentTemplate<
   TComponent extends ElementType,
   TCustomProps,
 > = (
   stringsOrFn: TemplateStringsArray | Function,
   ...values: any[]
-) => ComponentType<Omit<React.HTMLAttributes<TComponent>, keyof TCustomProps> & TCustomProps>;
+) => UIComponent<TComponent, TCustomProps>;
 
-export type UILibrary = (
-  <T extends ElementType>(component: T) => UIComponent<
+export type UILibrary<TPlugins extends {} = {}> = (
+  <T extends ElementType>(component: T) => UIComponentTemplate<
     T,
-    { asChild?: boolean, as?: keyof HTMLElementTagNameMap } & JSX.IntrinsicAttributes
+    JSX.IntrinsicAttributes
   >
 ) & {
-    [Key in keyof HTMLElementTagNameMap]: UIComponent<
+    [Key in keyof HTMLElementTagNameMap]: UIComponentTemplate<
       Key,
-      { asChild?: boolean, as?: keyof HTMLElementTagNameMap, className?: any }
+      JSX.IntrinsicAttributes & HTMLAttributes<Key>
     >;
-  };
+  } & UILibraryPlugins<TPlugins & DefaultPlugins>;
 
-export interface UILibraryConfig {
-  prefix?: string;
-  cache?: Map<string | ElementType, Function>;
-  features?: UIComponentFeature<any>[];
-  wrappers?: UIComponentWrapper<any>[];
+
+export type DefaultPlugins = {
+  createComponent: UIComponent<any, any>;
+  createTemplate: UIComponentTemplate<any, any>;
+  variants: UIComponentVariants;
 }
 
-export type UIComponentConfig<CustomProps extends {} = {}> = UILibraryConfig & CustomProps & {
-  params?: any[];
+export type UILibraryPlugin<Plugin = any> = Plugin;
+
+export type UILibraryPlugins<TPlugins> = {
+  [Key in keyof TPlugins]: UILibraryPlugin<TPlugins[Key]>
+};
+
+export type UILibraryPluginInitFunction<TConfig extends UILibraryConfig = {}, TPlugin = any> = (config: TConfig) => UILibraryPlugin<TPlugin>
+
+export type UILibraryPluginsInitializer<TPlugins, TConfig extends {}> = {
+  [Key in keyof TPlugins]: UILibraryPluginInitFunction<TConfig, TPlugins[Key]>
 }
 
-export type UIComponentFeature<CustomProps> = (component: string | ComponentType, config: UIComponentConfig) => (props: PropsWithChildren<CustomProps>, ref: ForwardedRef<unknown>) => PropsWithChildren<CustomProps>;
+export type UILibraryConfig<TPlugins extends {} = {}, TConfig extends {} = {}> = {
+  features?: UIComponentFeature<any, any>[];
+  plugins?: UILibraryPluginsInitializer<TPlugins, TConfig>;
+} & TConfig
 
-export type UIComponentWrapper<CustomProps> = (component: string | ComponentType, config: UIComponentConfig) => (element: React.ForwardRefExoticComponent<Omit<CustomProps, "ref"> & React.RefAttributes<unknown>>) => ComponentType;
+export type UIComponentConfig<TConfig extends {} = {}> = UILibraryConfig<any, TConfig>;
+
+export type UIComponentHook<CustomProps extends {}> = (props: PropsWithChildren<CustomProps>, ref: ForwardedRef<unknown>) => PropsWithChildren<CustomProps>
+
+export type UIComponentFeature<CustomProps extends {} = {}, CustomConfig extends {} = {}> = (component: string | ComponentType<CustomProps>, config: UILibraryConfig<any, CustomConfig>) => UIComponentHook<CustomProps>;

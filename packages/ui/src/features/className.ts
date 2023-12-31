@@ -1,16 +1,15 @@
 import { classNames } from '@incomplete/ui.classnames';
 import { isFunction } from '@incomplete/ui.utils';
 
-import type { UIComponentFeature } from '@/types';
+import type { UIComponentFeature } from '../types';
 
-export const featureClassName: UIComponentFeature<{ params: any[], className?: any }> = (_component, config) => {
-  const { params } = config;
-  const [stringsOrFn, ...values] = params ?? [];
-  
+export const featureClassName: UIComponentFeature<{ className?: any }, { params?: any[] }> = (_component, config) => {
+  const [stringsOrFn, ...values] = config?.params ?? [];
+
   const isFn = isFunction(stringsOrFn);
   const baseClasses = !isFn && String.raw({ raw: stringsOrFn.toString() }, ...values);
 
-  return ({ className, ...props }, _ref) => {
+  return ({ className, ...props }: any, _ref) => {
     const propClasses = isFn && stringsOrFn(props);
     return { ...props, className: classNames(baseClasses, propClasses, className) };
   };

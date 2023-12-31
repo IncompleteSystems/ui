@@ -1,0 +1,36 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title='Guides/The ref Prop' />
+
+# React Ref Forwarding
+
+We use `React.forwardRef` to forward the ref to the underlying DOM element automatically. This means you can use ref on any component created by our library.
+
+```tsx
+import ui from '@incomplete/ui';
+
+const Card = ui.div`overflow-hidden rounded-lg bg-white shadow`;
+
+function MyCard() {
+  const ref = useRef();
+  return <Card ref={ref}>Hello World!</Card>;
+}
+```
+
+Internally, our `Card` translates to something similar to the following:
+
+```tsx
+const Card = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...props }, ref) => (
+  <div
+    ref={ref}
+    className={classNames(
+      "overflow-hidden rounded-lg bg-white shadow",
+      className,
+    )}
+    {...props}
+  />
+));
+```

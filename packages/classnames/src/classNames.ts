@@ -8,19 +8,16 @@ export type ClassName = string | number | null | undefined | ClassName[] | Class
 const toClassMap = (className?: ClassName): ClassMap | null => {
   // if className is falsy, return null
   if (!className) {
-    console.log('className is falsy', className);
     return null;
   }
 
   // if className is a string or number, create a new object with the className as the key and true as the value
   if (isString(className) || isNumber(className)) {
-    console.log('className is string or number', className);
     return { [className.toString()]: true };
   }
 
   // if className is an array, map over it and call toClassMap again, then filter and merge the results
   if (isArray(className)) {
-    console.log('className is array', className);
     return (className as ClassName[]).map(toClassMap).filter(Boolean).reduce((prevClassMap, nextClassMap) => {
       return { ...prevClassMap, ...nextClassMap }
     }, {});
@@ -29,8 +26,6 @@ const toClassMap = (className?: ClassName): ClassMap | null => {
 
   // if className is an object, return it
   if (isObject(className)) {
-    console.log('className is object', className);
-
     return className as ClassMap;
   }
 

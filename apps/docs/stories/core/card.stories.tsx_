@@ -3,6 +3,8 @@ import ui from "@incomplete/ui";
 
 const Card = ui.div`rounded-lg border bg-slate-100 text-white shadow-sm`;
 
+Card.displayName = "Card";
+
 const meta: Meta<typeof Card> = {
   component: Card,
   argTypes: {

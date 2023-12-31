@@ -1,17 +1,30 @@
 import type { Meta, StoryObj } from "@storybook/react";
+
 import ui from "@incomplete/ui";
 
-const UIDiv = ui.div`test-class-base`;
+const ButtonStyles = ui.variants({
+  base: 'bg-red-500',
+  variants: {
+    color: {
+      primary: 'bg-blue-500 text-white',
+      secondary: 'bg-purple-500 text-white'
+    },
+  },
+});
 
-const meta: Meta<typeof UIDiv> = {
-  component: UIDiv,
+const TVDiv = ui.button(ButtonStyles);
+
+const meta: Meta<typeof TVDiv> = {
+  title: "Tailwind Variants",
+  component: TVDiv,
+  tags: ['autodocs'],
   argTypes: {
   },
 };
 
 export default meta;
 
-type Story = StoryObj<typeof UIDiv>;
+type Story = StoryObj<typeof TVDiv>;
 
 /*
  *👇 Render functions are a framework specific feature to allow you control on how the component renders.
@@ -20,22 +33,14 @@ type Story = StoryObj<typeof UIDiv>;
  */
 export const Main: Story = {
   render: (props) => (
-    <UIDiv
+    <TVDiv
+      color='secondary'
       {...props}
-      className={[
-        'test-class',
-        { 'test-class2': true, 'test-class3': false },
-        ['test-class4', 'test-class5'],
-        {
-          'test-class3': true,
-          'test-class5': false,
-        },
-      ]}
     >
       <span>Hello World!</span>
-    </UIDiv>
+    </TVDiv>
   ),
-  name: "UIDiv",
+  name: "ui",
   args: {
   },
 };

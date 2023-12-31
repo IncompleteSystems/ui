@@ -1,0 +1,28 @@
+import { Meta, Source } from '@storybook/blocks';
+
+<Meta title='Guides/The className Prop' />
+
+# The `className` Prop
+
+Components created by our `UILibrary` function accept a `className` prop, which accepts a mix of a variety of formats, including strings, arrays, and objects.
+
+## Extend classes
+We use `@incomplete/ui.classnames` which is an alternative to [clsx](https://github.com/lukeed/clsx), that uses map and reduce instead of while/for-loops.
+
+```jsx
+import ui from '@incomplete/ui';
+
+const Title = ui.h2`text-class-base`;
+ 
+// Strings
+<Title className='text-class2' />
+ 
+// Array
+<Title className={[false, 'text-class3']} />
+ 
+// Objects
+<Title className={{ 'text-class4': true }} />
+ 
+// Nesting
+<Title className={[{ 'text-class5': true, 'text-class3': false }, 'text-class6']} />
+```

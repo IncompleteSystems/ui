@@ -1,0 +1,31 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title='Internals/Library Plugins' />
+
+# Default Library Plugins
+
+The library methods on the `ui` instance are implemented by plugins to the library.
+
+Internally we include the following plugins, which provide default behavior for the library:
+
+- **createComponent**: Creates the underlying component and implements the component behaviors.
+- **createTemplate**: Creates a component template that can be used to render the component with a custom style.
+- **componentVariants**: Create styles for the component's variants using `tailwind-variants`.
+
+You can easily add features to your ui library by creating your own `UILibraryPlugin`.
+
+# Creating a Plugin
+
+A plugin is a function that receives the `UILibraryConfig` and returns a method for the library.
+
+For example our `ui.variants()` method is implemented by the `componentVariants` plugin:
+
+```tsx
+import { tv as variants } from 'tailwind-variants';
+
+export const componentVariantsPlugin = (config: UILibraryConfig) => (method: string) => variants;
+```
+
+In our plugin we import the `tailwind-variants` package and return a function that receives the plugin name and returns the variants function.
+
+This way our plugin can receive both the `UILibraryConfig` and the method name it was called with, these can be used to configure plugin behavior if needed.
