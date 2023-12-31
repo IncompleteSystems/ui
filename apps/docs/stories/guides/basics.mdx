@@ -1,0 +1,36 @@
+import { Meta } from '@storybook/blocks';
+
+<Meta title='Guides/Basic Usage' />
+
+# Basic `UILibrary` Usage
+
+An example of how to use the `UILibrary` component, with just the default component behaviors.
+
+```jsx
+// import the default UILibrary
+import ui from '@incomplete/ui';
+
+// create a button component with a custom style
+const Button = ui.button`text-white bg-blue-500 hover:bg-blue-700 py-2 px-4 rounded`;
+```
+
+# Basic `UILibrary` Usage with Variants
+
+An example of how to use the `UILibrary` component, with variants.
+
+```jsx
+// Import our UI library
+import ui from '@incomplete/ui';
+
+// Create styles for a button using tailwind + variants
+const ButtonStyles = ui.variants({
+  base: `rounded-md bg-indigo-600 px-3 py-2 text-white text-sm font-semibold shadow-sm`,
+  variants: {
+    primary: `bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500`,
+    secondary: `bg-gray-600 hover:bg-gray-700 focus:ring-gray-500`,
+  },
+})
+
+// Create a button component using the styles
+const Button = ui.button(ButtonStyles);
+```

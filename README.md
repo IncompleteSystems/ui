@@ -1,4 +1,9 @@
-## @incomplete/ui
+<p align="center">
+  <img src="./demo.gif" />
+</p>
+
+
+# @incomplete/ui
 
 A collection of plugins and component behaviors that can be used to create UI libraries with ease.
 
