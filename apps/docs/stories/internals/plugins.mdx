@@ -23,7 +23,7 @@ For example our `ui.variants()` method is implemented by the `componentVariants`
 ```tsx
 import { tv as variants } from 'tailwind-variants';
 
-export const componentVariantsPlugin = (config: UILibraryConfig) => (method: string) => variants;
+const componentVariantsPlugin = (config: UILibraryConfig) => (method: string) => variants;
 ```
 
 In our plugin we import the `tailwind-variants` package and return a function that receives the plugin name and returns the variants function.
