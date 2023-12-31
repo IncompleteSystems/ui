@@ -111,5 +111,3 @@ Contributions are welcome! Here are several ways you can contribute:
 - **[Submit Pull Requests](https://github.com/IncompleteSystems/ui/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
 - **[Join the Discussions](https://github.com/IncompleteSystems/ui/discussions)**: Share your insights, provide feedback, or ask questions.
 - **[Report Issues](https://github.com/IncompleteSystems/ui/issues)**: Submit bugs found or log feature requests for ui.
-
-```
