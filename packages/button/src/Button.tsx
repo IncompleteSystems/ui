@@ -10,7 +10,7 @@ import Link from '@incomplete/ux.link';
 
 import { TouchTarget } from './TouchTarget';
 
-const ButtonStyles = ui.variants({
+export const ButtonStyles = ui.variants({
   base: [
     // Base
     'relative isolate inline-flex items-center justify-center gap-x-2 rounded-lg border text-base/6 font-semibold',
@@ -190,7 +190,7 @@ const ButtonStyles = ui.variants({
 export type ButtonProps = VariantProps<typeof ButtonStyles> & React.PropsWithChildren<(HeadlessButtonProps | React.ComponentPropsWithoutRef<typeof Link>)>;
 
 export const Button = forwardRef((
-  { styles, className, children, ...props }: ButtonProps,
+  { className, children, ...props }: ButtonProps,
   ref: React.ForwardedRef<HTMLElement>
 ) => {
   return 'href' in props ? (
