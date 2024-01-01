@@ -29,7 +29,7 @@
     "@vitejs/plugin-react": "^4.2.0",
     "autoprefixer": "^10.4.16",
     "eslint": "^8.54.0",
-    "remark-gfm": "^3.0.1",
+    "remark-gfm": "^4.0.0",
     "postcss": "^8.4.32",
     "serve": "^14.2.1",
     "storybook": "^7.5.3",
