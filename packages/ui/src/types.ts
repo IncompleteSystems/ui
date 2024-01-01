@@ -1,12 +1,16 @@
 import type { ComponentType, ElementType, ForwardedRef, HTMLAttributes, PropsWithChildren } from 'react';
-import type { TV } from 'tailwind-variants';
+import type { TV as UIComponentVariants, VariantProps as UIComponentVariantProps } from 'tailwind-variants';
 
-export type UIComponentVariants = TV;
+export { UIComponentVariants, UIComponentVariantProps };
 
 export type UIComponent<
   TComponent extends ElementType,
   TCustomProps,
-> = ComponentType<Omit<React.HTMLAttributes<TComponent>, keyof TCustomProps> & TCustomProps>;
+> = React.ForwardRefExoticComponent<Omit<any, "ref"> & React.RefAttributes<unknown>>;
+//React.ForwardRefExoticComponent<TCustomProps & React.ComponentPropsWithoutRef<TComponent>>
+//ComponentType<React.PropsWithRef<React.HTMLAttributes<TComponent>> & React.PropsWithChildren<TCustomProps>>>; 
+// ComponentType<Omit<React.HTMLAttributes<TComponent>, keyof TCustomProps> & React.PropsWithRef<TCustomProps>>;
+// JSX.IntrinsicElements
 
 export type UIComponentTemplate<
   TComponent extends ElementType,
@@ -24,7 +28,7 @@ export type UILibrary<TPlugins extends {} = {}> = (
 ) & {
     [Key in keyof HTMLElementTagNameMap]: UIComponentTemplate<
       Key,
-      JSX.IntrinsicAttributes & HTMLAttributes<Key>
+      JSX.IntrinsicAttributes & React.PropsWithRef<HTMLAttributes<Key>>
     >;
   } & UILibraryPlugins<TPlugins & DefaultPlugins>;
 

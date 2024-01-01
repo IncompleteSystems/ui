@@ -3,7 +3,7 @@ import { createElement, forwardRef } from 'react';
 import type { ComponentType, ElementType, ForwardedRef } from 'react';
 import type { UIComponentConfig } from './types';
 
-export const createComponent: <CustomProps extends Omit<any, "ref"> & React.RefAttributes<unknown>>(
+export const createComponent: <CustomProps extends {}>(
   component: string | ElementType, config: UIComponentConfig
 ) => ComponentType<CustomProps> = (
   component: string | ElementType, config: UIComponentConfig

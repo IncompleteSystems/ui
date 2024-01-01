@@ -3,7 +3,7 @@ import type { UIComponentConfig, UILibraryConfig } from './types';
 
 import { createComponent } from './createComponent';
 
-export const createTemplate: <CustomProps extends Omit<any, "ref"> & React.RefAttributes<unknown>>(
+export const createTemplate: <CustomProps extends {}>(
   component: string | ElementType, config: UIComponentConfig
 ) => (
   ...params: any[]
