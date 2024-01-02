@@ -8,7 +8,7 @@ import ui from '@incomplete/ui';
 const LinkStyles = ui.variants({});
 
 const Link = React.forwardRef((
-  { className, ...props }: { href: string } & React.ComponentPropsWithoutRef<'a'>,
+  { ...props }: { href: string } & React.ComponentPropsWithoutRef<'a'>,
   ref: React.ForwardedRef<HTMLAnchorElement>
 ) => {
   const Link = ui.a(LinkStyles);

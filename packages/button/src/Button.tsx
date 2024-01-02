@@ -1,9 +1,8 @@
 import { forwardRef } from 'react';
-import { VariantProps } from 'tailwind-variants';
 
 import { Button as HeadlessButton, ButtonProps as HeadlessButtonProps } from '@headlessui/react';
 
-import ui from '@incomplete/ui';
+import ui, { UIComponentVariantProps } from '@incomplete/ui';
 import { classNames as clsx } from '@incomplete/ui.classnames';
 
 import Link from '@incomplete/ux.link';
@@ -26,6 +25,9 @@ export const ButtonStyles = ui.variants({
 
     // Icon
     '[&>[data-slot=icon]]:-mx-0.5 [&>[data-slot=icon]]:my-0.5 [&>[data-slot=icon]]:size-5 [&>[data-slot=icon]]:shrink-0 [&>[data-slot=icon]]:text-[--btn-icon] [&>[data-slot=icon]]:sm:my-1 [&>[data-slot=icon]]:sm:size-4 forced-colors:[--btn-icon:ButtonText] forced-colors:data-[hover]:[--btn-icon:ButtonText]',
+
+    // Cursor
+    'cursor-default',
   ],
   variants: {
     styles: {
@@ -187,7 +189,7 @@ export const ButtonStyles = ui.variants({
   },
 });
 
-export type ButtonProps = VariantProps<typeof ButtonStyles> & React.PropsWithChildren<(HeadlessButtonProps | React.ComponentPropsWithoutRef<typeof Link>)>;
+export type ButtonProps = UIComponentVariantProps<typeof ButtonStyles> & React.PropsWithChildren<(HeadlessButtonProps | React.ComponentPropsWithoutRef<typeof Link>)>;
 
 export const Button = forwardRef((
   { className, children, ...props }: ButtonProps,
@@ -198,7 +200,7 @@ export const Button = forwardRef((
       <TouchTarget>{children}</TouchTarget>
     </Link>
   ) : (
-    <HeadlessButton {...props} className={clsx(ButtonStyles(props), 'cursor-default', className)} ref={ref}>
+    <HeadlessButton {...props} className={clsx(ButtonStyles(props), className)} ref={ref}>
       <TouchTarget>{children}</TouchTarget>
     </HeadlessButton>
   )
