@@ -12,8 +12,11 @@
   },
   "dependencies": {
     "@incomplete/ui": "*",
+    "@incomplete/ux.avatar": "*",
+    "@incomplete/ux.badge": "*",
     "@incomplete/ux.button": "*",
     "@incomplete/ux.link": "*",
+    "@fortawesome/free-solid-svg-icons": "6.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

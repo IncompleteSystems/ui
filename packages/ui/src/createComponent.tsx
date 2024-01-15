@@ -1,12 +1,12 @@
 import { createElement, forwardRef } from 'react';
 
-import type { ComponentType, ElementType, ForwardedRef } from 'react';
-import type { UIComponentConfig } from './types';
+import type { ComponentType } from 'react';
+import type { ElementTagNames, UIComponentConfig } from './types';
 
 export const createComponent: <CustomProps extends {}>(
-  component: string | ElementType, config: UIComponentConfig
+  component: ElementTagNames, config: UIComponentConfig
 ) => ComponentType<CustomProps> = (
-  component: string | ElementType, config: UIComponentConfig
+  component: ElementTagNames, config: UIComponentConfig
 ) => {
     const features = config.features ?? [];
 
@@ -14,9 +14,7 @@ export const createComponent: <CustomProps extends {}>(
       return feature(component, config);
     });
 
-    // TODO: Fix the typing on the forwardRef 
-    const element = forwardRef((props: any, ref: ForwardedRef<unknown>) => {
-
+    const element = forwardRef((props: any, ref) => {
       const { component: Component = component, ...componentProps } = componentFeatures.reduce((props, useFeature) => {
         return { ...props, ...useFeature(props, ref) };
       }, props);

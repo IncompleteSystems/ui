@@ -1,14 +1,14 @@
-import type { ComponentType, ElementType } from 'react';
-import type { UIComponentConfig, UILibraryConfig } from './types';
+import type { ComponentType } from 'react';
+import type { ElementTagNames, UIComponentConfig, UILibraryConfig } from './types';
 
 import { createComponent } from './createComponent';
 
 export const createTemplate: <CustomProps extends {}>(
-  component: string | ElementType, config: UIComponentConfig
+  component: ElementTagNames, config: UIComponentConfig
 ) => (
   ...params: any[]
 ) => ComponentType<CustomProps> = (
-  component: string | ElementType, config: UIComponentConfig
+  component: ElementTagNames, config: UIComponentConfig
 ) => (
   ...params: unknown[]
 ) => {

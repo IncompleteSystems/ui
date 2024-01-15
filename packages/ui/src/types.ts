@@ -20,13 +20,15 @@ export type UIComponentTemplate<
   ...values: any[]
 ) => UIComponent<TComponent, TCustomProps>;
 
+export type ElementTagNames = Exclude<keyof HTMLElementTagNameMap | keyof SVGElementTagNameMap, "set">;
+
 export type UILibrary<TPlugins extends {} = {}> = (
   <T extends ElementType>(component: T) => UIComponentTemplate<
     T,
     JSX.IntrinsicAttributes
   >
 ) & {
-    [Key in keyof HTMLElementTagNameMap]: UIComponentTemplate<
+    [Key in ElementTagNames]: UIComponentTemplate<
       Key,
       JSX.IntrinsicAttributes & React.PropsWithRef<HTMLAttributes<Key>>
     >;

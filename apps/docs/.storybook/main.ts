@@ -7,6 +7,7 @@ function getAbsolutePath(value) {
 }
 
 const config = {
+  staticDirs: ['../public'],
   stories: [
     "../stories/introduction.mdx",
     "../stories/*.stories.tsx", 
@@ -16,7 +17,6 @@ const config = {
     getAbsolutePath("@storybook/addon-links"),
     getAbsolutePath("@storybook/addon-essentials"),
     getAbsolutePath("@storybook/addon-themes"),
-    // getAbsolutePath("@storybook/addon-docs"),
     {
       name: '@storybook/addon-docs',
       options: {

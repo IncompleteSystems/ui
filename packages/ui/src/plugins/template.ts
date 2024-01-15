@@ -1,9 +1,9 @@
 import { createTemplate } from '../createTemplate';
 
-import { UILibraryConfig, UILibraryPlugin } from '../types';
+import { ElementTagNames, UILibraryConfig, UILibraryPlugin } from '../types';
 
 export const componentTemplatePlugin = (
   config: Omit<UILibraryConfig<any, any>, 'plugins' | 'features'>
 ): UILibraryPlugin => (
-  component: keyof React.JSX.IntrinsicElements
+  component: ElementTagNames
 ) => createTemplate(component, config);
