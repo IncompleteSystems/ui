@@ -1,14 +1,25 @@
 // Replace your-framework with the framework you are using (e.g., react, vue3)
-import { Preview } from '@storybook/react';
+import { Preview, ReactRenderer } from '@storybook/react';
 
 import { themes } from '@storybook/theming';
 
 import { AuthContainer } from './preview-container';
 
-import '../tailwind.css'; 
+import '../tailwind.css';
 
+import { withThemeByDataAttribute } from '@storybook/addon-themes';
 
 const preview: Preview = {
+  decorators: [
+    withThemeByDataAttribute<ReactRenderer>({
+      themes: {
+        light: 'light',
+        dark: 'dark',
+      },
+      defaultTheme: 'light',
+      attributeName: 'data-theme'
+    }),
+  ],
   parameters: {
     backgrounds: {
       default: 'default',

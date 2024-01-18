@@ -1,10 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import Card, { CardStyles, CardHeader, CardBody, CardFooter } from "@incomplete/ux.card";
-import Icon from "@incomplete/ux.icon";
-
-import { faHouse } from '@fortawesome/free-solid-svg-icons';
-
+import Card, { CardStyles } from "@incomplete/ux.card";
 
 const meta: Meta<typeof Card> = {
   title: "Components/Card",
@@ -31,12 +27,12 @@ type Story = StoryObj<typeof Card>;
 export const CardWithHeader: Story = {
   render: (props) => (
     <Card {...props}>
-      <CardHeader>
+      <Card.Header>
         HelloWorld!
-      </CardHeader>
-      <CardBody>
+      </Card.Header>
+      <Card.Body>
         HelloWorld!
-      </CardBody>
+      </Card.Body>
     </Card>
   ),
   args: {
@@ -47,9 +43,9 @@ export const CardWithHeader: Story = {
 export const CardWithBody: Story = {
   render: (props) => (
     <Card {...props}>
-      <CardBody>
+      <Card.Body>
         HelloWorld!
-      </CardBody>
+      </Card.Body>
     </Card>
   ),
   args: {
@@ -60,15 +56,15 @@ export const CardWithBody: Story = {
 export const CardWithHeaderAndFooter: Story = {
   render: (props) => (
     <Card {...props}>
-      <CardHeader>
+      <Card.Header>
         HelloWorld!
-      </CardHeader>
-      <CardBody>
+      </Card.Header>
+      <Card.Body>
         HelloWorld!
-      </CardBody>
-      <CardFooter>
+      </Card.Body>
+      <Card.Footer>
         HelloWorld!
-      </CardFooter>
+      </Card.Footer>
     </Card>
   ),
   args: {
