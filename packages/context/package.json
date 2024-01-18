@@ -1,5 +1,5 @@
 {
-  "name": "@incomplete/ux.card",
+  "name": "@incomplete/ui.context",
   "version": "0.1.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -17,8 +17,6 @@
   },
   "dependencies": {
     "@incomplete/ui": "*",
-    "@incomplete/ui.context": "*",
-    "@headlessui/react": "next",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
