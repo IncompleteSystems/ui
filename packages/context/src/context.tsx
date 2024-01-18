@@ -18,10 +18,12 @@ export type VariantProviderProps<V extends (...args: any) => any> = {
   children: ReactNode;
 };
 
-export const createVariantContext = <V extends (...args: any) => any>(): VariantContext<V> => {
+export type VariantContextFactory = <V extends (...args: any) => any>() => VariantContext<V>;
+
+export const createVariantContext: VariantContextFactory = <V extends (...args: any) => any>(): VariantContext<V> => {
 
   const VariantContext = createContext<VariantContextValue<V>>({
-    styles: undefined as ReturnType<V>,
+    styles: undefined as VariantStyles<V>,
   });
 
   function useVariantContext(): VariantContextValue<V> {

@@ -1,5 +1,5 @@
 import { classNameFeature, elementTagFeature, propertiesFeature } from './features';
-import { createComponentPlugin, componentTemplatePlugin, componentVariantsPlugin } from './plugins';
+import { createComponentPlugin, componentTemplatePlugin, componentVariantsPlugin, componentContextPlugin } from './plugins';
 import { UILibraryConfig } from './types';
 
 export const createConfig = <
@@ -11,6 +11,7 @@ export const createConfig = <
     createComponent: createComponentPlugin,
     createTemplate: componentTemplatePlugin,
     variants: componentVariantsPlugin,
+    context: componentContextPlugin,
   };
 
   const plugins = {

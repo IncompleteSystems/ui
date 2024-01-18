@@ -1,8 +1,8 @@
-import { createVariantContext } from '@incomplete/ui.context';
+import ui from '@incomplete/ui';
 
 import { CardStyles } from './styles';
 
 export const {
   useVariantContext: useCardContext,
   VariantProvider: CardStylesProvider
-} = createVariantContext<typeof CardStyles>();
+} = ui.context<typeof CardStyles>();

@@ -1,0 +1,65 @@
+import { Meta, Source } from '@storybook/blocks';
+
+<Meta title='Guides/The context Plugin' />
+
+# The `context` Plugin
+
+Components often need to share style configuration between components. The usual approach is to do what is called prop-drilling where you pass down the configuration as props to the components that need it. This is not only tedious, but also makes it hard to change the configuration.
+Instead we use the `context` plugin to provide a scoped configuration that can be used by all nested components.
+
+## Usage
+We create a context using the `@incomplete/ui.context` library. 
+
+```jsx
+// Import the UI library
+import ui from '@incomplete/ui';
+
+// Define the styles for the component
+const MyComponentStyles = ui.variants({ 
+  base: {
+    // base styles...
+  },
+  slots: {
+    nested: [
+      // nested styles...
+    ],
+  },
+});
+
+// Create the context which will be used to provide the styles to the component
+const { useVariantContext, VariantProvider } = ui.context();
+
+// Define the component
+const MyComponent = ({ children, className, ...props }) => {
+  // Generate the styles for the component
+  const styles = useMemo(() => MyComponentStyles(props), [props]);
+
+  // Provide the base styles to the component
+  const ComponentBase = ui.div(styles.base);
+
+  return (
+    // Provide the styles to the context
+    <VariantProvider value={{ styles }}>
+      <ComponentBase className={className} {...props}>
+        {children}
+      </ComponentBase>
+    </VariantProvider>
+  );
+};
+
+// Define the nested component
+export const MyNestedComponent = ({ children, className, ...props }) => {
+  // Get the styles from the context
+  const { styles } = useVariantContext();
+
+  // Apply the styles to the nested component
+  const NestedComponent = ui.div(styles.nested);
+
+  return (
+    // Render the nested component with additional props
+    <NestedComponent className={className} {...props}>
+      {children}
+    </NestedComponent>
+  );
+};
+```
