@@ -3,7 +3,10 @@ import { Preview } from '@storybook/react';
 
 import { themes } from '@storybook/theming';
 
+import { AuthContainer } from './preview-container';
+
 import '../tailwind.css'; 
+
 
 const preview: Preview = {
   parameters: {
@@ -27,6 +30,7 @@ const preview: Preview = {
     layout: 'centered',
     docs: {
       theme: themes.dark,
+      container: AuthContainer,
     },
     options: {
       storySort: {
