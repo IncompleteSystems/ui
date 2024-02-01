@@ -32,7 +32,7 @@
     "@storybook/addon-links": "^7.6.9",
     "@storybook/addon-themes": "^7.6.9",
     "@storybook/manager-api":"^7.6.9",
-    "@storybook/theming":"^7.6.9",
+    "@storybook/theming":"^7.6.12",
     "@storybook/react": "^7.6.9",
     "@storybook/react-vite": "^7.6.9",
     "@vitejs/plugin-react": "^4.2.0",
