@@ -1,0 +1,74 @@
+{
+  "width-xxs": {
+    "value": "{Spacing.80}",
+    "type": "dimension",
+    "parent": "Widths/Style",
+    "description": ""
+  },
+  "width-sm": {
+    "value": "{Spacing.120}",
+    "type": "dimension",
+    "parent": "Widths/Style",
+    "description": ""
+  },
+  "width-lg": {
+    "value": "{Spacing.160}",
+    "type": "dimension",
+    "parent": "Widths/Style",
+    "description": ""
+  },
+  "width-xl": {
+    "value": "{Spacing.192}",
+    "type": "dimension",
+    "parent": "Widths/Style",
+    "description": ""
+  },
+  "width-2xl": {
+    "value": "{Spacing.256}",
+    "type": "dimension",
+    "parent": "Widths/Style",
+    "description": ""
+  },
+  "width-3xl": {
+    "value": "{Spacing.320}",
+    "type": "dimension",
+    "parent": "Widths/Style",
+    "description": ""
+  },
+  "width-4xl": {
+    "value": "{Spacing.360}",
+    "type": "dimension",
+    "parent": "Widths/Style",
+    "description": ""
+  },
+  "width-5xl": {
+    "value": "{Spacing.400}",
+    "type": "dimension",
+    "parent": "Widths/Style",
+    "description": ""
+  },
+  "width-6xl": {
+    "value": "{Spacing.480}",
+    "type": "dimension",
+    "parent": "Widths/Style",
+    "description": ""
+  },
+  "width-md": {
+    "value": "{Spacing.140}",
+    "type": "dimension",
+    "parent": "Widths/Style",
+    "description": ""
+  },
+  "paragraph-max-width": {
+    "value": "{Spacing.180}",
+    "type": "dimension",
+    "parent": "Widths/Style",
+    "description": ""
+  },
+  "width-xs": {
+    "value": "{Spacing.96}",
+    "type": "dimension",
+    "parent": "Widths/Style",
+    "description": ""
+  }
+}

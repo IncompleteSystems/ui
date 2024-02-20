@@ -1,0 +1,20 @@
+{
+  "container-max-width-desktop": {
+    "value": "{Spacing.320}",
+    "type": "dimension",
+    "parent": "Containers/Style",
+    "description": ""
+  },
+  "container-padding-desktop": {
+    "value": "{Spacing.8}",
+    "type": "dimension",
+    "parent": "Containers/Style",
+    "description": ""
+  },
+  "container-padding-mobile": {
+    "value": "{Spacing.4}",
+    "type": "dimension",
+    "parent": "Containers/Style",
+    "description": ""
+  }
+}

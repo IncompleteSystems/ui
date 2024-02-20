@@ -12,12 +12,24 @@ export const AuthContainer: FC<PropsWithChildren<DocsContainerProps>> = ({ child
   const [signInWithGithub] = useSignInWithGithub(firebaseAuth);
 
   useEffect(() => {
+    if (userError) {
+      console.error(userError);
+    }
+  }, [userError]);
+
+  useEffect(() => {
     if (user) {
       return;
     }
 
-    signInWithGithub();
-  }, [user, signInWithGithub]);
+    if (!user && userLoading) {
+      return;
+    }
+
+    if (!user && !userLoading) {
+      signInWithGithub();
+    }
+  }, [user, userLoading, signInWithGithub]);
 
   return <DocsContainer {...props}>{children}</DocsContainer>;
 };

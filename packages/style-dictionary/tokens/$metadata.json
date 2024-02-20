@@ -1,0 +1,11 @@
+{
+  "tokenSetOrder": [
+    "Primitives/Style",
+    "Color Modes/Light",
+    "Color Modes/Dark",
+    "Containers/Style",
+    "Widths/Style",
+    "Spacing/Style",
+    "Radius/Style"
+  ]
+}

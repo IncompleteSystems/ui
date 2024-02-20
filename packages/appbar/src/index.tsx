@@ -1,7 +1,12 @@
 import AppBar from './AppBar';
+import AppBarNav from './AppBarNav';
+import AppBarNavItem from './AppBarNavItem';
 
-export * from './AppBar';
-export * from './AppBarNav';
-export * from './AppBarNavItem';
+export * from './context';
+export * from './types';
+export * from './styles';
 
-export default AppBar;
+export default Object.assign(AppBar, {
+  Nav: AppBarNav,
+  NavItem: AppBarNavItem,
+});

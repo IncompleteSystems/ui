@@ -1,0 +1,68 @@
+{
+  "radius-none": {
+    "value": "0rem",
+    "type": "dimension",
+    "parent": "Radius/Style",
+    "description": ""
+  },
+  "radius-xxs": {
+    "value": "0.125rem",
+    "type": "dimension",
+    "parent": "Radius/Style",
+    "description": ""
+  },
+  "radius-xs": {
+    "value": "0.25rem",
+    "type": "dimension",
+    "parent": "Radius/Style",
+    "description": ""
+  },
+  "radius-sm": {
+    "value": "0.375rem",
+    "type": "dimension",
+    "parent": "Radius/Style",
+    "description": ""
+  },
+  "radius-md": {
+    "value": "0.5rem",
+    "type": "dimension",
+    "parent": "Radius/Style",
+    "description": ""
+  },
+  "radius-xl": {
+    "value": "0.75rem",
+    "type": "dimension",
+    "parent": "Radius/Style",
+    "description": ""
+  },
+  "radius-2xl": {
+    "value": "1rem",
+    "type": "dimension",
+    "parent": "Radius/Style",
+    "description": ""
+  },
+  "radius-4xl": {
+    "value": "1.5rem",
+    "type": "dimension",
+    "parent": "Radius/Style",
+    "description": ""
+  },
+  "radius-full": {
+    "value": "624.9375rem",
+    "type": "dimension",
+    "parent": "Radius/Style",
+    "description": ""
+  },
+  "radius-lg": {
+    "value": "0.625rem",
+    "type": "dimension",
+    "parent": "Radius/Style",
+    "description": ""
+  },
+  "radius-3xl": {
+    "value": "1.25rem",
+    "type": "dimension",
+    "parent": "Radius/Style",
+    "description": ""
+  }
+}

@@ -1,0 +1,76 @@
+import React, { useState } from 'react';
+import { Dialog, Description } from '@headlessui/react';
+import { IconProps, Icon } from '@incomplete/ux.icon';
+import { faX } from '@fortawesome/free-solid-svg-icons';
+
+interface ModalProps {
+  backgroundImgSrc?: string,
+  icon: IconProps["icon"],
+  title?: string,
+  description?: string,
+  close?: boolean
+}
+
+export const Modal = ({ backgroundImgSrc, icon, title, description, close }: ModalProps): JSX.Element => {
+  const [isOpen, setIsOpen] = useState(true);
+
+  return (
+    <Dialog open={isOpen} onClose={() => setIsOpen(false)} className="fixed inset-0 flex items-center justify-center">
+      <Dialog.Panel className="flex flex-col w-[400px] items-center relative bg-primary rounded-[var(--radius-xl)] overflow-hidden">
+
+        {/* {backgroundImgSrc ? <img className="absolute w-[216px] h-[216px] top-0 left-0" alt="Background pattern" src={backgroundImgSrc} /> : null} */}
+
+        <div className="items-center flex flex-col relative self-stretch w-full flex-[0_0_auto]">
+          <div className="flex-col gap-[var(--spacing-xl)] pt-[var(--spacing-3xl)] pr-[var(--spacing-3xl)] pl-[var(--spacing-3xl)] pb-0 flex items-start relative self-stretch w-full flex-[0_0_auto]">
+            {/* {icon ? <img className="relative w-[48px] h-[48px]" alt="Featured icon" src="featured-icon.svg" /> : null} */}
+            <Modal.Icon icon={icon}>
+            <div className="flex flex-col items-start gap-[var(--spacing-xs)] relative self-stretch w-full flex-[0_0_auto]">
+              <Dialog.Title className="relative self-stretch mt-[-1.00px] font-text-lg-semibold font-[number:var(--text-lg-semibold-font-weight)] text-primary text-[length:var(--text-lg-semibold-font-size)] tracking-[var(--text-lg-semibold-letter-spacing)] leading-[var(--text-lg-semibold-line-height)] [font-style:var(--text-lg-semibold-font-style)]">
+                {title}
+              </Dialog.Title>
+              <Description className="relative self-stretch font-text-sm-regular font-[number:var(--text-sm-regular-font-weight)] text-tertiary text-[length:var(--text-sm-regular-font-size)] tracking-[var(--text-sm-regular-letter-spacing)] leading-[var(--text-sm-regular-line-height)] [font-style:var(--text-sm-regular-font-style)]">
+                {description}
+              </Description>
+            </div>
+          </div>
+
+        </div>
+        <Modal.Actions>
+          <Modal.Action>
+            Cancel
+          </Modal.Action>
+          <Modal.Action>
+            Submit
+          </Modal.Action>
+        </Modal.Actions>
+      </Dialog.Panel>
+    </Dialog>
+  );
+};
+
+const Close = ({ onClick }: { onClick: () => void }): JSX.Element => {
+  return (
+    <button onClick={onClick} className="absolute top-[16px] right-[16px]">
+      <Icon
+        icon={faX}
+        className="w-[12px] h-[12px]"
+      />
+    </button>
+  );
+}
+
+const Actions = ({ children }: { children: React.ReactNode }): JSX.Element => {
+  return (
+    <div className="items-start pt-[var(--spacing-4xl)] pb-0 px-0 flex flex-col relative self-stretch w-full flex-[0_0_auto]">
+      <div className="gap-[var(--spacing-lg)] pr-[var(--spacing-3xl)] pb-[var(--spacing-3xl)] pl-[var(--spacing-3xl)] pt-0 flex items-start relative self-stretch w-full flex-[0_0_auto]">
+        {children}
+      </div>
+    </div>
+  );
+}
+
+export default Object.assign(Modal, {
+  Actions,
+  Action: Button,
+  Close,
+});

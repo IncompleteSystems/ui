@@ -1,9 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import AppBar, { AppBarNav, AppBarNavItem, AppBarStyles } from "@incomplete/ux.appbar";
-import Icon from "@incomplete/ux.icon";
+import AppBar, { AppBarStyles } from "@incomplete/ux.appbar";
 
-import { faHouse } from '@fortawesome/free-solid-svg-icons';
+import { faDashboard, faHouse, faUsers } from '@fortawesome/free-solid-svg-icons';
 
 
 const meta: Meta<typeof AppBar> = {
@@ -31,14 +30,14 @@ type Story = StoryObj<typeof AppBar>;
 export const Primary: Story = {
   render: (props) => (
     <AppBar {...props}>
-      <AppBarNav>
-        <AppBarNavItem href={""}>
-          <Icon icon={faHouse} className='h-6 w-6' />
-        </AppBarNavItem>
-      </AppBarNav>
+      <AppBar.Nav>
+        <AppBar.NavItem icon={faHouse} />
+        <AppBar.NavItem icon={faDashboard} />
+        <AppBar.NavItem icon={faUsers} />
+      </AppBar.Nav>
     </AppBar>
   ),
   args: {
-    color: 'indigo',
+    color: 'theme',
   },
 };

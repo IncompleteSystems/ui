@@ -1,9 +1,16 @@
 import ui from '@incomplete/ui';
 
-export const AppBarNavStyles = ui.variants({
-  base: 'flex flex-col space-y-1',
-});
+import { useAppBarContext } from './context';
+import { AppBarNavProps } from './types';
 
-export const AppBarNav = ui.nav(AppBarNavStyles);
+export const AppBarNav = ({ className, ...props }: AppBarNavProps) => {
+  const { styles } = useAppBarContext();
+
+  const AppBarNavBase = ui.nav(styles.nav);
+
+  return (
+    <AppBarNavBase className={className} {...props} />
+  );
+}
 
 export default AppBarNav;

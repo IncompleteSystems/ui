@@ -1,0 +1,2092 @@
+{
+  "Colors": {
+    "Text": {
+      "text-primary (900)": {
+        "value": "{Colors.Gray (light mode).900}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "text-tertiary (600)": {
+        "value": "{Colors.Gray (light mode).600}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "text-error-primary (600)": {
+        "value": "{Colors.Error.600}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "text-warning-primary (600)": {
+        "value": "{Colors.Warning.600}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "text-success-primary (600)": {
+        "value": "{Colors.Success.600}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "text-white": {
+        "value": "{Colors.Base.white}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "text-secondary (700)": {
+        "value": "{Colors.Gray (light mode).700}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "text-disabled": {
+        "value": "{Colors.Gray (light mode).500}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "text-secondary_hover": {
+        "value": "{Colors.Gray (light mode).800}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "text-tertiary_hover": {
+        "value": "{Colors.Gray (light mode).700}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "text-brand-secondary (700)": {
+        "value": "{Colors.Brand.700}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "text-placeholder": {
+        "value": "{Colors.Gray (light mode).500}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "text-placeholder_subtle": {
+        "value": "{Colors.Gray (light mode).300}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "text-brand-tertiary (600)": {
+        "value": "{Colors.Brand.600}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "text-quarterary (500)": {
+        "value": "{Colors.Gray (light mode).500}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "text-brand-primary (900)": {
+        "value": "{Colors.Brand.900}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "text-primary_on-brand": {
+        "value": "{Colors.Base.white}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "text-secondary_on-brand": {
+        "value": "{Colors.Brand.200}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "text-tertiary_on-brand": {
+        "value": "{Colors.Brand.200}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "text-quarterary_on-brand": {
+        "value": "{Colors.Brand.300}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "text-brand-tertiary_alt": {
+        "value": "{Colors.Brand.600}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      }
+    },
+    "Border": {
+      "border-secondary": {
+        "value": "{Colors.Gray (light mode).200}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "border-error": {
+        "value": "{Colors.Error.300}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "border-primary": {
+        "value": "{Colors.Gray (light mode).300}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "border-brand": {
+        "value": "{Colors.Brand.300}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "border-brand-solid": {
+        "value": "{Colors.Brand.600}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "border-disabled": {
+        "value": "{Colors.Gray (light mode).300}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "border-error-solid": {
+        "value": "{Colors.Error.600}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "border-disabled_subtle": {
+        "value": "{Colors.Gray (light mode).200}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "border-tertiary": {
+        "value": "{Colors.Gray (light mode).100}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "border-brand-solid_alt": {
+        "value": "{Colors.Brand.600}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      }
+    },
+    "Background": {
+      "bg-primary": {
+        "value": "{Colors.Base.white}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-tertiary": {
+        "value": "{Colors.Gray (light mode).100}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-brand-primary": {
+        "value": "{Colors.Brand.50}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-error-secondary": {
+        "value": "{Colors.Error.100}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-warning-primary": {
+        "value": "{Colors.Warning.50}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-warning-secondary": {
+        "value": "{Colors.Warning.100}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-success-primary": {
+        "value": "{Colors.Success.50}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-success-secondary": {
+        "value": "{Colors.Success.100}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-brand-solid": {
+        "value": "{Colors.Brand.600}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-secondary-solid": {
+        "value": "{Colors.Gray (light mode).600}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-error-solid": {
+        "value": "{Colors.Error.600}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-warning-solid": {
+        "value": "{Colors.Warning.600}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-success-solid": {
+        "value": "{Colors.Success.600}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-secondary_hover": {
+        "value": "{Colors.Gray (light mode).100}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-primary_hover": {
+        "value": "{Colors.Gray (light mode).50}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-disabled": {
+        "value": "{Colors.Gray (light mode).100}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-active": {
+        "value": "{Colors.Gray (light mode).50}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-brand-solid_hover": {
+        "value": "{Colors.Brand.700}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-error-primary": {
+        "value": "{Colors.Error.50}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-brand-secondary": {
+        "value": "{Colors.Brand.100}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-secondary": {
+        "value": "{Colors.Gray (light mode).50}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-disabled_subtle": {
+        "value": "{Colors.Gray (light mode).50}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-quarternary": {
+        "value": "{Colors.Gray (light mode).200}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-primary_alt": {
+        "value": "{Colors.Base.white}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-brand-primary_alt": {
+        "value": "{Colors.Brand.50}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-secondary_alt": {
+        "value": "{Colors.Gray (light mode).50}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-overlay": {
+        "value": "{Colors.Gray (light mode).950}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-secondary_subtle": {
+        "value": "{Colors.Gray (light mode).25}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-brand-section": {
+        "value": "{Colors.Brand.800}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-brand-section_subtle": {
+        "value": "{Colors.Brand.700}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "bg-primary-solid": {
+        "value": "{Colors.Gray (light mode).950}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      }
+    },
+    "Foreground": {
+      "fg-secondary (700)": {
+        "value": "{Colors.Gray (light mode).700}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "fg-warning-primary": {
+        "value": "{Colors.Warning.600}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "fg-success-primary": {
+        "value": "{Colors.Success.600}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "fg-white": {
+        "value": "{Colors.Base.white}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "fg-success-secondary": {
+        "value": "{Colors.Success.500}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "fg-secondary_hover": {
+        "value": "{Colors.Gray (light mode).800}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "fg-primary (900)": {
+        "value": "{Colors.Gray (light mode).900}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "fg-disabled": {
+        "value": "{Colors.Gray (light mode).400}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "fg-quarterary (500)": {
+        "value": "{Colors.Gray (light mode).500}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "fg-quarterary_hover": {
+        "value": "{Colors.Gray (light mode).600}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "fg-brand-secondary (500)": {
+        "value": "{Colors.Brand.500}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "fg-brand-primary (600)": {
+        "value": "{Colors.Brand.600}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "fg-quinary (400)": {
+        "value": "{Colors.Gray (light mode).400}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "fg-quinary_hover": {
+        "value": "{Colors.Gray (light mode).500}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "fg-error-primary": {
+        "value": "{Colors.Error.600}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "fg-disabled_subtle": {
+        "value": "{Colors.Gray (light mode).300}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "fg-warning-secondary": {
+        "value": "{Colors.Warning.500}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "fg-error-secondary": {
+        "value": "{Colors.Error.500}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "fg-senary (300)": {
+        "value": "{Colors.Gray (light mode).300}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "fg-tertiary (600)": {
+        "value": "{Colors.Gray (light mode).600}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "fg-tertiary_hover": {
+        "value": "{Colors.Gray (light mode).700}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "fg-brand-primary_alt": {
+        "value": "{Colors.Brand.600}",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      }
+    }
+  },
+  "Component colors": {
+    "Utility": {
+      "Blue": {
+        "utility-blue-600": {
+          "value": "{Colors.Blue.600}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-blue-700": {
+          "value": "{Colors.Blue.700}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-blue-500": {
+          "value": "{Colors.Blue.500}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-blue-200": {
+          "value": "{Colors.Blue.200}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-blue-50": {
+          "value": "{Colors.Blue.50}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-blue-100": {
+          "value": "{Colors.Blue.100}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-blue-400": {
+          "value": "{Colors.Blue.400}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-blue-300": {
+          "value": "{Colors.Blue.300}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        }
+      },
+      "Brand": {
+        "utility-brand-600": {
+          "value": "{Colors.Brand.600}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-brand-700": {
+          "value": "{Colors.Brand.700}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-brand-500": {
+          "value": "{Colors.Brand.500}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-brand-200": {
+          "value": "{Colors.Brand.200}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-brand-50": {
+          "value": "{Colors.Brand.50}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-brand-100": {
+          "value": "{Colors.Brand.100}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-brand-400": {
+          "value": "{Colors.Brand.400}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-brand-50_alt": {
+          "value": "{Colors.Brand.50}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-brand-100_alt": {
+          "value": "{Colors.Brand.100}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-brand-200_alt": {
+          "value": "{Colors.Brand.200}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-brand-400_alt": {
+          "value": "{Colors.Brand.400}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-brand-500_alt": {
+          "value": "{Colors.Brand.500}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-brand-600_alt": {
+          "value": "{Colors.Brand.600}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-brand-700_alt": {
+          "value": "{Colors.Brand.700}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-brand-300": {
+          "value": "{Colors.Brand.300}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-brand-900": {
+          "value": "{Colors.Brand.900}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-brand-800": {
+          "value": "{Colors.Brand.800}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-brand-300_alt": {
+          "value": "{Colors.Brand.300}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-brand-800_alt": {
+          "value": "{Colors.Brand.800}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-brand-900_alt": {
+          "value": "{Colors.Brand.900}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        }
+      },
+      "Gray": {
+        "utility-gray-700": {
+          "value": "{Colors.Gray (light mode).700}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-gray-600": {
+          "value": "{Colors.Gray (light mode).600}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-gray-500": {
+          "value": "{Colors.Gray (light mode).500}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-gray-200": {
+          "value": "{Colors.Gray (light mode).200}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-gray-50": {
+          "value": "{Colors.Gray (light mode).50}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-gray-100": {
+          "value": "{Colors.Gray (light mode).100}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-gray-400": {
+          "value": "{Colors.Gray (light mode).400}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-gray-300": {
+          "value": "{Colors.Gray (light mode).300}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-gray-900": {
+          "value": "{Colors.Gray (light mode).900}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-gray-800": {
+          "value": "{Colors.Gray (light mode).800}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        }
+      },
+      "Error": {
+        "utility-error-600": {
+          "value": "{Colors.Error.600}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-error-700": {
+          "value": "{Colors.Error.700}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-error-500": {
+          "value": "{Colors.Error.500}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-error-200": {
+          "value": "{Colors.Error.200}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-error-50": {
+          "value": "{Colors.Error.50}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-error-100": {
+          "value": "{Colors.Error.100}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-error-400": {
+          "value": "{Colors.Error.400}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-error-300": {
+          "value": "{Colors.Error.300}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        }
+      },
+      "Warning": {
+        "utility-warning-600": {
+          "value": "{Colors.Warning.600}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-warning-700": {
+          "value": "{Colors.Warning.700}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-warning-500": {
+          "value": "{Colors.Warning.500}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-warning-200": {
+          "value": "{Colors.Warning.200}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-warning-50": {
+          "value": "{Colors.Warning.50}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-warning-100": {
+          "value": "{Colors.Warning.100}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-warning-400": {
+          "value": "{Colors.Warning.400}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-warning-300": {
+          "value": "{Colors.Warning.300}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        }
+      },
+      "Success": {
+        "utility-success-600": {
+          "value": "{Colors.Success.600}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-success-700": {
+          "value": "{Colors.Success.700}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-success-500": {
+          "value": "{Colors.Success.500}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-success-200": {
+          "value": "{Colors.Success.200}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-success-50": {
+          "value": "{Colors.Success.50}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-success-100": {
+          "value": "{Colors.Success.100}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-success-400": {
+          "value": "{Colors.Success.400}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-success-300": {
+          "value": "{Colors.Success.300}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        }
+      },
+      "Orange": {
+        "utility-orange-600": {
+          "value": "{Colors.Orange.600}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-orange-700": {
+          "value": "{Colors.Orange.700}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-orange-500": {
+          "value": "{Colors.Orange.500}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-orange-200": {
+          "value": "{Colors.Orange.200}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-orange-50": {
+          "value": "{Colors.Orange.50}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-orange-100": {
+          "value": "{Colors.Orange.100}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-orange-400": {
+          "value": "{Colors.Orange.400}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-orange-300": {
+          "value": "{Colors.Orange.300}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        }
+      },
+      "Blue dark": {
+        "utility-blue-dark-600": {
+          "value": "{Colors.Blue dark.600}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-blue-dark-700": {
+          "value": "{Colors.Blue dark.700}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-blue-dark-500": {
+          "value": "{Colors.Blue dark.500}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-blue-dark-200": {
+          "value": "{Colors.Blue dark.200}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-blue-dark-50": {
+          "value": "{Colors.Blue dark.50}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-blue-dark-100": {
+          "value": "{Colors.Blue dark.100}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-blue-dark-400": {
+          "value": "{Colors.Blue dark.400}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-blue-dark-300": {
+          "value": "{Colors.Blue dark.300}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        }
+      },
+      "Indigo": {
+        "utility-indigo-600": {
+          "value": "{Colors.Indigo.600}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-indigo-700": {
+          "value": "{Colors.Indigo.700}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-indigo-500": {
+          "value": "{Colors.Indigo.500}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-indigo-200": {
+          "value": "{Colors.Indigo.200}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-indigo-50": {
+          "value": "{Colors.Indigo.50}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-indigo-100": {
+          "value": "{Colors.Indigo.100}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-indigo-400": {
+          "value": "{Colors.Indigo.400}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-indigo-300": {
+          "value": "{Colors.Indigo.300}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        }
+      },
+      "Fuchsia": {
+        "utility-fuchsia-600": {
+          "value": "{Colors.Fuchsia.600}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-fuchsia-700": {
+          "value": "{Colors.Fuchsia.700}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-fuchsia-500": {
+          "value": "{Colors.Fuchsia.500}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-fuchsia-200": {
+          "value": "{Colors.Fuchsia.200}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-fuchsia-50": {
+          "value": "{Colors.Fuchsia.50}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-fuchsia-100": {
+          "value": "{Colors.Fuchsia.100}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-fuchsia-400": {
+          "value": "{Colors.Fuchsia.400}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-fuchsia-300": {
+          "value": "{Colors.Fuchsia.300}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        }
+      },
+      "Pink": {
+        "utility-pink-600": {
+          "value": "{Colors.Pink.600}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-pink-700": {
+          "value": "{Colors.Pink.700}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-pink-500": {
+          "value": "{Colors.Pink.500}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-pink-200": {
+          "value": "{Colors.Pink.200}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-pink-50": {
+          "value": "{Colors.Pink.50}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-pink-100": {
+          "value": "{Colors.Pink.100}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-pink-400": {
+          "value": "{Colors.Pink.400}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-pink-300": {
+          "value": "{Colors.Pink.300}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        }
+      },
+      "Purple": {
+        "utility-purple-600": {
+          "value": "{Colors.Purple.600}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-purple-700": {
+          "value": "{Colors.Purple.700}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-purple-500": {
+          "value": "{Colors.Purple.500}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-purple-200": {
+          "value": "{Colors.Purple.200}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-purple-50": {
+          "value": "{Colors.Purple.50}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-purple-100": {
+          "value": "{Colors.Purple.100}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-purple-400": {
+          "value": "{Colors.Purple.400}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-purple-300": {
+          "value": "{Colors.Purple.300}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        }
+      },
+      "Orange dark": {
+        "utility-orange-dark-600": {
+          "value": "{Colors.Orange dark.600}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-orange-dark-700": {
+          "value": "{Colors.Orange dark.700}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-orange-dark-500": {
+          "value": "{Colors.Orange dark.500}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-orange-dark-200": {
+          "value": "{Colors.Orange dark.200}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-orange-dark-50": {
+          "value": "{Colors.Orange dark.50}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-orange-dark-100": {
+          "value": "{Colors.Orange dark.100}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-orange-dark-400": {
+          "value": "{Colors.Orange dark.400}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-orange-dark-300": {
+          "value": "{Colors.Orange dark.300}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        }
+      },
+      "Blue light": {
+        "utility-blue-light-600": {
+          "value": "{Colors.Blue light.600}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-blue-light-700": {
+          "value": "{Colors.Blue light.700}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-blue-light-500": {
+          "value": "{Colors.Blue light.500}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-blue-light-200": {
+          "value": "{Colors.Blue light.200}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-blue-light-50": {
+          "value": "{Colors.Blue light.50}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-blue-light-100": {
+          "value": "{Colors.Blue light.100}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-blue-light-400": {
+          "value": "{Colors.Blue light.400}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-blue-light-300": {
+          "value": "{Colors.Blue light.300}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        }
+      },
+      "Gray blue": {
+        "utility-gray-blue-600": {
+          "value": "{Colors.Gray blue.600}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-gray-blue-700": {
+          "value": "{Colors.Gray blue.700}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-gray-blue-500": {
+          "value": "{Colors.Gray blue.500}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-gray-blue-200": {
+          "value": "{Colors.Gray blue.200}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-gray-blue-50": {
+          "value": "{Colors.Gray blue.50}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-gray-blue-100": {
+          "value": "{Colors.Gray blue.100}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-gray-blue-400": {
+          "value": "{Colors.Gray blue.400}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "utility-gray-blue-300": {
+          "value": "{Colors.Gray blue.300}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        }
+      }
+    },
+    "Components": {
+      "Tooltips": {
+        "tooltip-supporting-text": {
+          "value": "{Colors.Gray (light mode).300}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        }
+      },
+      "Buttons": {
+        "Primary": {
+          "button-primary-bg": {
+            "value": "{Colors.Brand.600}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-primary-bg_hover": {
+            "value": "{Colors.Brand.700}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-primary-fg": {
+            "value": "{Colors.Base.white}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-primary-border": {
+            "value": "{Colors.Brand.600}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-primary-border_hover": {
+            "value": "{Colors.Brand.700}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-primary-fg_hover": {
+            "value": "{Colors.Base.white}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          }
+        },
+        "Secondary": {
+          "button-secondary-bg": {
+            "value": "{Colors.Base.white}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-secondary-bg_hover": {
+            "value": "{Colors.Gray (light mode).50}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-secondary-fg": {
+            "value": "{Colors.Gray (light mode).700}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-secondary-fg_hover": {
+            "value": "{Colors.Gray (light mode).800}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-secondary-border": {
+            "value": "{Colors.Gray (light mode).300}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-secondary-border_hover": {
+            "value": "{Colors.Gray (light mode).300}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          }
+        },
+        "Secondary color": {
+          "button-secondary-color-bg": {
+            "value": "{Colors.Base.white}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-secondary-color-bg_hover": {
+            "value": "{Colors.Brand.50}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-secondary-color-border_hover": {
+            "value": "{Colors.Brand.300}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-secondary-color-border": {
+            "value": "{Colors.Brand.300}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-secondary-color-fg": {
+            "value": "{Colors.Brand.700}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-secondary-color-fg_hover": {
+            "value": "{Colors.Brand.800}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          }
+        },
+        "Primary error": {
+          "button-primary-error-fg": {
+            "value": "{Colors.Base.white}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-primary-error-fg_hover": {
+            "value": "{Colors.Base.white}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-primary-error-bg": {
+            "value": "{Colors.Error.600}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-primary-error-bg_hover": {
+            "value": "{Colors.Error.700}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-primary-error-border": {
+            "value": "{Colors.Error.600}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-primary-error-border_hover": {
+            "value": "{Colors.Error.700}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          }
+        },
+        "Secondary error": {
+          "button-secondary-error-fg": {
+            "value": "{Colors.Error.700}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-secondary-error-fg_hover": {
+            "value": "{Colors.Error.800}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-secondary-error-bg": {
+            "value": "{Colors.Base.white}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-secondary-error-bg_hover": {
+            "value": "{Colors.Error.50}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-secondary-error-border": {
+            "value": "{Colors.Error.300}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-secondary-error-border_hover": {
+            "value": "{Colors.Error.300}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          }
+        },
+        "Tertiary": {
+          "button-tertiary-fg": {
+            "value": "{Colors.Gray (light mode).600}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-tertiary-fg_hover": {
+            "value": "{Colors.Gray (light mode).700}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-tertiary-bg_hover": {
+            "value": "{Colors.Gray (light mode).50}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          }
+        },
+        "Tertiary color": {
+          "button-tertiary-color-fg": {
+            "value": "{Colors.Brand.700}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-tertiary-color-fg_hover": {
+            "value": "{Colors.Brand.800}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-tertiary-color-bg_hover": {
+            "value": "{Colors.Brand.50}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          }
+        },
+        "Tertiary error": {
+          "button-tertiary-error-fg": {
+            "value": "{Colors.Error.700}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-tertiary-error-fg_hover": {
+            "value": "{Colors.Error.800}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "button-tertiary-error-bg_hover": {
+            "value": "{Colors.Error.50}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          }
+        }
+      },
+      "WYSIWYG editor": {
+        "wysiwyg-editor-icon-fg": {
+          "value": "{Colors.Gray (light mode).400}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "wysiwyg-editor-icon-fg_active": {
+          "value": "{Colors.Gray (light mode).500}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        }
+      },
+      "Avatars": {
+        "avatar-contrast-border": {
+          "value": "#00000014",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "avatar-profile-photo-border": {
+          "value": "{Colors.Base.white}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "avatar-bg": {
+          "value": "{Colors.Gray (light mode).100}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "avatar-focus-border": {
+          "value": "#98a2b324",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        }
+      },
+      "Breadcrumbs": {
+        "breadcrumb-fg": {
+          "value": "{Colors.Gray (light mode).600}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "breadcrumb-fg_hover": {
+          "value": "{Colors.Gray (light mode).700}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "breadcrumb-bg_hover": {
+          "value": "{Colors.Gray (light mode).50}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "breadcrumb-brand-bg_hover": {
+          "value": "{Colors.Brand.50}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "breadcrumb-brand-fg_hover": {
+          "value": "{Colors.Brand.700}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "breadcrumb-icon-fg": {
+          "value": "{Colors.Gray (light mode).500}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "breadcrumb-icon-fg_hover": {
+          "value": "{Colors.Gray (light mode).700}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "breadcrumb-brand-icon-fg_hover": {
+          "value": "{Colors.Brand.700}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        }
+      },
+      "Icons": {
+        "Featured icons": {
+          "Modern": {
+            "featured-icon-modern-border": {
+              "value": "{Colors.Gray (light mode).200}",
+              "type": "color",
+              "parent": "Color Modes/Light",
+              "description": ""
+            }
+          },
+          "Light": {
+            "featured-icon-light-fg-brand": {
+              "value": "{Colors.Brand.600}",
+              "type": "color",
+              "parent": "Color Modes/Light",
+              "description": ""
+            },
+            "featured-icon-light-fg-gray": {
+              "value": "{Colors.Gray (light mode).500}",
+              "type": "color",
+              "parent": "Color Modes/Light",
+              "description": ""
+            },
+            "featured-icon-light-fg-error": {
+              "value": "{Colors.Error.600}",
+              "type": "color",
+              "parent": "Color Modes/Light",
+              "description": ""
+            },
+            "featured-icon-light-fg-warning": {
+              "value": "{Colors.Warning.600}",
+              "type": "color",
+              "parent": "Color Modes/Light",
+              "description": ""
+            },
+            "featured-icon-light-fg-success": {
+              "value": "{Colors.Success.600}",
+              "type": "color",
+              "parent": "Color Modes/Light",
+              "description": ""
+            }
+          },
+          "Dark": {
+            "featured-icon-dark-fg-brand": {
+              "value": "{Colors.Base.white}",
+              "type": "color",
+              "parent": "Color Modes/Light",
+              "description": ""
+            },
+            "featured-icon-dark-fg-gray": {
+              "value": "{Colors.Base.white}",
+              "type": "color",
+              "parent": "Color Modes/Light",
+              "description": ""
+            },
+            "featured-icon-dark-fg-error": {
+              "value": "{Colors.Base.white}",
+              "type": "color",
+              "parent": "Color Modes/Light",
+              "description": ""
+            },
+            "featured-icon-dark-fg-warning": {
+              "value": "{Colors.Base.white}",
+              "type": "color",
+              "parent": "Color Modes/Light",
+              "description": ""
+            },
+            "featured-icon-dark-fg-success": {
+              "value": "{Colors.Base.white}",
+              "type": "color",
+              "parent": "Color Modes/Light",
+              "description": ""
+            }
+          }
+        },
+        "Icons": {
+          "icon-fg-brand": {
+            "value": "{Colors.Brand.600}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "icon-fg-brand_on-brand": {
+            "value": "{Colors.Brand.200}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          }
+        },
+        "Social icons": {
+          "social-icon-fg-x": {
+            "value": "#242e36",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "social-icon-fg-apple": {
+            "value": "{Colors.Base.black}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "social-icon-fg-github": {
+            "value": "{Colors.Base.black}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "social-icon-fg-angellist": {
+            "value": "{Colors.Base.black}",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "social-icon-fg-tumblr": {
+            "value": "#001935",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          },
+          "social-icon-fg-instagram": {
+            "value": "#000100",
+            "type": "color",
+            "parent": "Color Modes/Light",
+            "description": ""
+          }
+        }
+      },
+      "Application navigation": {
+        "nav-item-icon-fg": {
+          "value": "{Colors.Gray (light mode).500}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "nav-item-icon-fg_active": {
+          "value": "{Colors.Gray (light mode).500}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "nav-item-button-icon-fg": {
+          "value": "{Colors.Gray (light mode).500}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "nav-item-button-icon-fg_active": {
+          "value": "{Colors.Gray (light mode).700}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        }
+      },
+      "Sliders": {
+        "slider-handle-border": {
+          "value": "{Colors.Border.border-brand-solid}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "slider-handle-bg": {
+          "value": "{Colors.Base.white}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        }
+      },
+      "Header sections": {
+        "header-abstract-50-bg": {
+          "value": "{Colors.Brand.50}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "header-abstract-100-bg": {
+          "value": "{Colors.Brand.100}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "header-abstract-200-bg": {
+          "value": "{Colors.Brand.200}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "header-abstract-300-bg": {
+          "value": "{Colors.Brand.300}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        }
+      },
+      "Mockups": {
+        "screen-mockup-border": {
+          "value": "{Colors.Gray (light mode).900}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        }
+      },
+      "Footers": {
+        "footer-button-fg": {
+          "value": "{Colors.Brand.200}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "footer-button-fg_hover": {
+          "value": "{Colors.Base.white}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "footer-badge-fg": {
+          "value": "{Colors.Success.700}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "footer-badge-border": {
+          "value": "{Colors.Success.200}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "footer-badge-bg": {
+          "value": "{Colors.Success.50}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        }
+      },
+      "App store badges": {
+        "app-store-badge-border": {
+          "value": "#a6a6a6",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        }
+      },
+      "Thumbnail": {
+        "thumbnail-badge-brand-fg": {
+          "value": "{Colors.Brand.700}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        },
+        "thumbnail-badge-success-fg": {
+          "value": "{Colors.Success.700}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        }
+      },
+      "Toggles": {
+        "toggle-button-fg_disabled": {
+          "value": "{Colors.Gray (light mode).50}",
+          "type": "color",
+          "parent": "Color Modes/Light",
+          "description": ""
+        }
+      }
+    },
+    "Alpha": {
+      "alpha-white-90": {
+        "value": "#ffffffe6",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "alpha-white-80": {
+        "value": "#ffffffcc",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "alpha-white-70": {
+        "value": "#ffffffb3",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "alpha-white-60": {
+        "value": "#ffffff99",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "alpha-white-50": {
+        "value": "#ffffff80",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "alpha-white-40": {
+        "value": "#ffffff66",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "alpha-white-30": {
+        "value": "#ffffff4d",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "alpha-white-20": {
+        "value": "#ffffff33",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "alpha-white-10": {
+        "value": "#ffffff1a",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "alpha-black-10": {
+        "value": "#0000001a",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "alpha-black-20": {
+        "value": "#00000033",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "alpha-black-30": {
+        "value": "#0000004d",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "alpha-black-40": {
+        "value": "#00000066",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "alpha-black-50": {
+        "value": "#00000080",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "alpha-black-60": {
+        "value": "#00000099",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "alpha-black-70": {
+        "value": "#000000b3",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "alpha-black-80": {
+        "value": "#000000cc",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "alpha-black-90": {
+        "value": "#000000e6",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "alpha-black-100": {
+        "value": "#000000",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      },
+      "alpha-white-100": {
+        "value": "#ffffff",
+        "type": "color",
+        "parent": "Color Modes/Light",
+        "description": ""
+      }
+    }
+  }
+}

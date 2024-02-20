@@ -1,0 +1,104 @@
+{
+  "spacing-none": {
+    "value": "{Spacing.0}",
+    "type": "dimension",
+    "parent": "Spacing/Style",
+    "description": ""
+  },
+  "spacing-xxs": {
+    "value": "{Spacing.0-5}",
+    "type": "dimension",
+    "parent": "Spacing/Style",
+    "description": ""
+  },
+  "spacing-xs": {
+    "value": "{Spacing.1}",
+    "type": "dimension",
+    "parent": "Spacing/Style",
+    "description": ""
+  },
+  "spacing-md": {
+    "value": "{Spacing.2}",
+    "type": "dimension",
+    "parent": "Spacing/Style",
+    "description": ""
+  },
+  "spacing-lg": {
+    "value": "{Spacing.3}",
+    "type": "dimension",
+    "parent": "Spacing/Style",
+    "description": ""
+  },
+  "spacing-xl": {
+    "value": "{Spacing.4}",
+    "type": "dimension",
+    "parent": "Spacing/Style",
+    "description": ""
+  },
+  "spacing-2xl": {
+    "value": "{Spacing.5}",
+    "type": "dimension",
+    "parent": "Spacing/Style",
+    "description": ""
+  },
+  "spacing-3xl": {
+    "value": "{Spacing.6}",
+    "type": "dimension",
+    "parent": "Spacing/Style",
+    "description": ""
+  },
+  "spacing-4xl": {
+    "value": "{Spacing.8}",
+    "type": "dimension",
+    "parent": "Spacing/Style",
+    "description": ""
+  },
+  "spacing-6xl": {
+    "value": "{Spacing.12}",
+    "type": "dimension",
+    "parent": "Spacing/Style",
+    "description": ""
+  },
+  "spacing-7xl": {
+    "value": "{Spacing.16}",
+    "type": "dimension",
+    "parent": "Spacing/Style",
+    "description": ""
+  },
+  "spacing-8xl": {
+    "value": "{Spacing.20}",
+    "type": "dimension",
+    "parent": "Spacing/Style",
+    "description": ""
+  },
+  "spacing-9xl": {
+    "value": "{Spacing.24}",
+    "type": "dimension",
+    "parent": "Spacing/Style",
+    "description": ""
+  },
+  "spacing-10xl": {
+    "value": "{Spacing.32}",
+    "type": "dimension",
+    "parent": "Spacing/Style",
+    "description": ""
+  },
+  "spacing-11xl": {
+    "value": "{Spacing.40}",
+    "type": "dimension",
+    "parent": "Spacing/Style",
+    "description": ""
+  },
+  "spacing-sm": {
+    "value": "{Spacing.1-5}",
+    "type": "dimension",
+    "parent": "Spacing/Style",
+    "description": ""
+  },
+  "spacing-5xl": {
+    "value": "{Spacing.10}",
+    "type": "dimension",
+    "parent": "Spacing/Style",
+    "description": ""
+  }
+}
